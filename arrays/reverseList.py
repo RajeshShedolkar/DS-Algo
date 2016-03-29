@@ -1,4 +1,3 @@
-
 A = [[1, 2, 3, 4], [5, 6, 7, 8]]
 
 def reverse(A):
@@ -11,6 +10,5 @@ def reverse(A):
             B[i][n-1-j] = A[i][j]
     
     return B        
-
 
 print reverse(A)
