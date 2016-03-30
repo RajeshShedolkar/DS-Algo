@@ -1,0 +1,32 @@
+<html><head>
+<title>rankOfString.py</title>
+<meta name="Generator" content="htmlizer/[twisted, version 13.2.0]" />
+<link rel="alternate" href="rankOfString.py" type="text/x-python" />
+
+</head>
+<body>
+<pre><span class="py-src-comment">#this function for those strings who doesn't have duplicate elements</span>
+<span class="py-src-comment"># str = 'string'</span>
+<span class="py-src-keyword">def</span> <span class="py-src-identifier">fact</span>(<span class="py-src-parameter">n</span>):
+    <span class="py-src-keyword">if</span> <span class="py-src-variable">n</span>&lt;=<span class="py-src-number">1</span> :
+        <span class="py-src-keyword">return</span> <span class="py-src-number">1</span>
+    <span class="py-src-keyword">else</span> :
+        <span class="py-src-keyword">return</span> <span class="py-src-variable">n</span>*<span class="py-src-variable">fact</span>(<span class="py-src-variable">n</span>-<span class="py-src-number">1</span>)     
+
+
+<span class="py-src-keyword">def</span> <span class="py-src-identifier">rank</span>(<span class="py-src-parameter">str</span>):
+    <span class="py-src-variable">rank</span> = <span class="py-src-number">0</span>
+    <span class="py-src-keyword">for</span> <span class="py-src-variable">i</span> <span class="py-src-keyword">in</span> <span class="py-src-variable">range</span>(<span class="py-src-variable">len</span>(<span class="py-src-variable">str</span>)):
+        <span class="py-src-variable">j</span> = <span class="py-src-variable">i</span> + <span class="py-src-number">1</span>
+        <span class="py-src-variable">count</span>=<span class="py-src-number">0</span>
+        <span class="py-src-keyword">while</span> <span class="py-src-variable">j</span>&lt;<span class="py-src-variable">len</span>(<span class="py-src-variable">str</span>):
+            <span class="py-src-keyword">if</span> <span class="py-src-variable">str</span>[<span class="py-src-variable">i</span>] &gt; <span class="py-src-variable">str</span>[<span class="py-src-variable">j</span>] :
+                <span class="py-src-variable">count</span>+=<span class="py-src-number">1</span>
+            <span class="py-src-variable">j</span>+=<span class="py-src-number">1</span>      
+        
+        <span class="py-src-variable">rank</span> = <span class="py-src-variable">rank</span> + <span class="py-src-variable">count</span>*<span class="py-src-variable">fact</span>( <span class="py-src-variable">len</span>(<span class="py-src-variable">str</span>) - <span class="py-src-number">1</span> - <span class="py-src-variable">i</span> )
+    <span class="py-src-keyword">return</span> <span class="py-src-variable">rank</span>
+
+    
+</pre>
+</body>
