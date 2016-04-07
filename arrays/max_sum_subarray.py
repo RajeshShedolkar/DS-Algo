@@ -21,8 +21,8 @@ def max_sum1(A):
         max_so_far = max(max_so_far, max_ending_here)
     return max_so_far
     
-                 
-A = [-2,1,-3,4,-1,2,1,-5,4]
+#101010010                 
+A = [-1,1,-1,1,-1,1,1,-1,1]
 
 print max_sum(A)
 print max_sum1(A)
