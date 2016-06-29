@@ -12,7 +12,11 @@ def check(exp):
         if c in ['{','[', '(' ]:
             stack.append(c)
         elif c in [ '}', ')', ']' ]:
-            if len(stack) and not match(stack.pop(), c):
+            # handling case like '}]'
+            if len(stack)==0:
+                return False
+
+            if not match(stack.pop(), c):
                 return False
     if stack:
         return False
@@ -23,5 +27,6 @@ def check(exp):
 
 exp = '[({a+b}+{b-a})]'
 
+exp = '}]'
 print check(exp)
                 
