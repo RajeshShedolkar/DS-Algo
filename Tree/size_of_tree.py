@@ -25,6 +25,3 @@ root.left.left  = Node(4)
 root.left.right = Node(5)
  
 print "Size of the tree is %d" %(size(root))
- 
-# This code is contributed by Nikhil Kumar Singh(nickzuck_007)
-
