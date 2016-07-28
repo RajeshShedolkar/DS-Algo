@@ -1,3 +1,8 @@
+# remove adjacent duplicates from string
+# ex.   RADDABCE  // 1st time
+#       RAABCE    // 2nd time 
+#       RBCE      // 3rd time no Adjacent duplicates found
+# final output:  RBCE
 A = 'RADDABCE'
 
 
