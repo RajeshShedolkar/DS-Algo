@@ -25,7 +25,8 @@ def edit_distance(A, B):
                     count+=1
                     i+=1
             #to handle boundary case since A has length n and B has n-1 length
-            # to handle such type of cases A = 'aaac' & B = 'aaa' 
+            # to handle such type of 
+            #cases A = 'aaac' & B = 'aaa' 
             if count==0:
                     count+=1
         if count==1:
