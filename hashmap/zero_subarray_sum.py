@@ -11,9 +11,6 @@ class Pair:
 class GFG:
     @staticmethod
     def findSubArrays(arr,  n):
-
-        # Array to store all the start and end
-        # indices of subarrays with 0 sum
         out = []
         i = 0
         while (i < n):
