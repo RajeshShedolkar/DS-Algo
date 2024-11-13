@@ -28,8 +28,6 @@ def atoi(A):
             else:
                 break
         str = sign + str    
-    #print B
-    #print str
     result = 0
     
     try :
