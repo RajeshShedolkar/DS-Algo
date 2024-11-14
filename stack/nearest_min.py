@@ -28,5 +28,5 @@ def small(A):
     return ans 
 
 A = [34, 35, 27, 42, 5, 28, 39, 20, 28]
-print prevSmaller(A)
-print small(A)
+print(prevSmaller(A))
+print(small(A))
