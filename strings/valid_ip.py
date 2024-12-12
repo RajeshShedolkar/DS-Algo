@@ -5,7 +5,7 @@ def check(A):
         A = '00'+A
     elif len(A)>3:
         return False 
-    #print A               
+              
     try :
         if not ('0'<=A[0] and A[0]<='2'):
             return False      
@@ -28,10 +28,7 @@ def check(A):
                 return False
     except:
        return False    
-
-#A = '123'
-#print check(A)
-                             
+                        
 def valid_ip(A):
     A = A.split(":")
     if not len(A)==4:
@@ -46,4 +43,4 @@ def valid_ip(A):
               
 A = "0:0:0:0"
 A = "255:255:255:255"              
-print A,valid_ip(A)               
+print(A,valid_ip(A))
