@@ -42,5 +42,5 @@ def valid_ip(A):
         return False      
               
 A = "0:0:0:0"
-A = "255:255:255:255"              
-print(A,valid_ip(A))
+A = "255:255:255:255"
+print(A, valid_ip(A))
