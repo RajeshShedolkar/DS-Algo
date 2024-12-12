@@ -26,4 +26,4 @@ def add(A, B):
     return sum[::-1]
 A = '111'
 B = '101010101'
-print add(A,B)        
+print(add(A,B))
