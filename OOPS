@@ -1,4 +1,9 @@
 How Encapsulation Works :
-Data Hiding: The variables (attributes) are kept private or protected, meaning they are not accessible directly from outside the class. Instead, they can only be accessed or modified through the methods.
-Access through Methods: Methods act as the interface through which external code interacts with the data stored in the variables. For instance, getters and setters are common methods used to retrieve and update the value of a private variable.
-Control and Security: By encapsulating the variables and only allowing their manipulation via methods, the class can enforce rules on how the variables are accessed or modified, thus maintaining control and security over the data.
+Data Hiding: The variables (attributes) are kept private or protected,   
+meaning they are not accessible directly from outside the class. Instead,   
+they can only be accessed or modified through the methods.
+Access through Methods: Methods act as the interface through which external code  
+interacts with the data stored in the variables. For instance,   
+getters and setters are common methods used to retrieve and update the value of a private variable.
+Control and Security: By encapsulating the variables and only allowing their manipulation via methods,  
+the class can enforce rules on how the variables are accessed or modified, thus maintaining control and security over the data.
