@@ -26,4 +26,4 @@ def max_count(A):
 
 A = [1, 1, 1, 0]
 #A = [1, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1]
-print A, "  index : ", max_count(A)
+print(A, "  index : ", max_count(A))
