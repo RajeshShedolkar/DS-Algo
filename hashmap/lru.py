@@ -18,7 +18,7 @@ class LRUCache:
             # Remove the key so it can be re-added at the end (most recently used)
             self.cache.move_to_end(key)
         
-        self.cache[key] = value  # Insert or update key-value pair
+        self.cache[key] = value
 
         if len(self.cache) > self.capacity:
             # Remove the first inserted (least recently used) item
